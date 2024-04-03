@@ -1,0 +1,6 @@
+failThreshold: 1
+name: "Reza profile"
+inspections:
+  - inspection: PhpVulnerablePathsInspection
+    enabled: true
+
