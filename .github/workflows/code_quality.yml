@@ -21,6 +21,8 @@ jobs:
           fetch-depth: 0  # a full history is required for pull request analysis
       - name: 'Qodana Scan'
         uses: JetBrains/qodana-action@v2023.3
+        with:
+          args: '--fail-threshold,2'
         env:
           QODANA_TOKEN: ${{ secrets.QODANA_TOKEN }}
-    fail-threshold: 2
+
